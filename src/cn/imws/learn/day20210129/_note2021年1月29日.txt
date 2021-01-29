@@ -1,0 +1,25 @@
+1.2.4
+startTimeIsNotRunTime.java
+执行start()的顺序不代表执行run()的顺序
+注：执行start()方法的顺序 不代表 线程启动的顺序。
+
+
+1.2.5
+myFirstRunableImplements.java
+实现Runable接口
+
+
+1.2.6
+advantageOfImplementsRunable
+Runable接口实现多线程的优点
+间接实现“多继承”
+
+*1.2.7   P16
+实现Runable接口与继承Thread类的内部流程
+
+1.2.8
+实例变量 共享 造成的 非线程安全问题 与 解决方案
+
+
+
+
