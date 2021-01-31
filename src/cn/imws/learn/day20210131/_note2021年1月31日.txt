@@ -1,0 +1,41 @@
+1.2.10
+i-- 与System.out.println()出现的非线程安全问题
+sameNum.java
+println()方法在内部是同步的，但i--操作是进入println()之前发生的
+
+
+1.3 currentThread()方法
+currentThread()方法 是返回代码被哪个线程调用。
+AboutCurrentThread.java
+CountOperate.java
+
+
+1.4 isAlive()方法
+method_isAlive.java
+CountOperate2.java
+
+1.5 sleep(long millis) 方法
+method_sleep.java
+
+1.6 sleep(long millis, int nanos) 方法
+method_sleep.java
+
+[*P33]1.7 StackTraceElement[] getStackTrace() 方法
+method_getStackTrace.java
+
+1.8 static void dumpStack() 方法
+static void dumpStack()方法的作用：将当前的线程的堆栈跟踪信息输出至标准错误流
+method_dumpStack.java
+
+[*P36]1.9 static Map<Thread, StackTraceElement[]> getAllStackTraces() 方法
+method_getAllStackTraces.java
+
+1.10 getId() 方法
+此方法用于获取线程的唯一标识
+method_getId
+
+[*P38]1.11 停止线程
+三种方式：
+1) 使用退出标志使线程正常退出
+2) 使用stop()强制终止线程，不推荐使用。因为是作废过期的方法，可能会出现不可预料的后果。
+3) 使用interrupt()方法中断线程
